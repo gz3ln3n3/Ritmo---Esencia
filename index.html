@@ -12,7 +12,7 @@
 <body>
 
 
-<div data-role="page" id="page" data-theme="c" data-url="-page">
+<div data-role="page" id="page" data-theme="c" data-url="page">
   <div data-role="header" data-theme="b">
 	<h1><img class="imgr" src="images/logo.png"/></h1>
 	<a href="#left-panel" data-theme="a" data-icon="grid" data-iconpos="notext" data-shadow="false" data-iconshadow="false">Open left panel</a>
@@ -30,8 +30,15 @@
   </div><!-- /content -->
   
   <div data-role="panel" id="left-panel" data-theme="b">
-    <p>Left reveal panel.</p>
-    <a href="#" data-rel="close" data-role="button" data-mini="true" data-inline="true" data-icon="delete" data-iconpos="right">Close</a>
+    <p>
+      <a href="#page" data-role="button" class="ui-btn-icon-left" data-icon="home">Inicio</a>
+      <a href="#quienessomos" data-role="button" class="ui-btn-icon-left" data-icon="info">¿Quiénes Somos?</a>
+      <a href="#cursos" data-role="button" class="ui-btn-icon-left" data-icon="grid">Cursos</a>
+      <a href="#instructores" data-role="button" class="ui-btn-icon-left" data-icon="check">Instructores</a>
+      <a href="#eventos" data-role="button" class="ui-btn-icon-left" data-icon="plus">Eventos</a>
+      <a href="#ubicacion" data-role="button" class="ui-btn-icon-left" data-icon="arrow-d">Ubicación</a>
+    </p>
+    
   </div><!-- /panel -->
   
   <div data-role="panel" id="right-panel" data-display="push" data-position="right" data-theme="c">
@@ -41,17 +48,19 @@
   
   
  <div data-role="footer" data-theme="b">
-		<h4>Pie de página</h4>
+		<h4>Ritmo y Esencia. Derechos Reservados 2015.</h4>
 	</div>
     
   </div> 
 
 
-<div data-role="page" id="page2">
+<div data-role="page" id="quienessomos">
 	
-    <div data-role="header" data-theme="b">
-		<h1><img class="imgr" src="images/logo.png"/></h1>
-	</div>
+     <div data-role="header" data-theme="b">
+	<h1><img class="imgr" src="images/logo.png"/></h1>
+	<a href="#left-panel" data-theme="a" data-icon="grid" data-iconpos="notext" data-shadow="false" data-iconshadow="false">Open left panel</a>
+	<a href="#right-panel" data-theme="a" data-icon="arrow-l" data-iconpos="notext" data-shadow="false" data-iconshadow="false" class="ui-icon-nodisc">Open right panel</a>
+  </div><!-- /header -->
 
 	<div data-role="header">
 		<h1>¿Quiénes somos?</h1>
@@ -71,6 +80,26 @@
 </p>
 
 	</div>
+    
+    
+    <div data-role="panel" id="left-panel" data-theme="b">
+    <p>
+      <a href="#page" data-role="button" class="ui-btn-icon-left" data-icon="home">Inicio</a>
+      <a href="#quienessomos" data-role="button" class="ui-btn-icon-left" data-icon="info">¿Quiénes Somos?</a>
+      <a href="#cursos" data-role="button" class="ui-btn-icon-left" data-icon="grid">Cursos</a>
+      <a href="#instructores" data-role="button" class="ui-btn-icon-left" data-icon="check">Instructores</a>
+      <a href="#eventos" data-role="button" class="ui-btn-icon-left" data-icon="plus">Eventos</a>
+      <a href="#ubicacion" data-role="button" class="ui-btn-icon-left" data-icon="arrow-d">Ubicación</a>
+    </p>
+    
+  </div><!-- /panel -->
+  
+  <div data-role="panel" id="right-panel" data-display="push" data-position="right" data-theme="c">
+    <p>Right push panel.</p>
+    <a href="#" data-rel="close" data-role="button" data-mini="true" data-inline="true" data-icon="delete" data-iconpos="right">Close</a>
+  </div><!-- /panel -->
+    
+    
 	<div data-role="footer">
 		<h4>Pie de página</h4>
 	</div>
@@ -99,6 +128,62 @@
 		<h4>Pie de página</h4>
 	</div>
 </div>
+
+
+
+
+
+
+<div data-role="page" id="ubicacion" data-theme="c" data-url="ubicacion">
+  <div data-role="header" data-theme="b">
+	<h1><img class="imgr" src="images/logo.png"/></h1>
+	<a href="#left-panel" data-theme="a" data-icon="grid" data-iconpos="notext" data-shadow="false" data-iconshadow="false">Open left panel</a>
+	<a href="#right-panel" data-theme="a" data-icon="arrow-l" data-iconpos="notext" data-shadow="false" data-iconshadow="false" class="ui-icon-nodisc">Open right panel</a>
+    
+  </div><!-- /header -->
+  
+  <div data-role="content">
+  
+  <div data-role="header">
+		<h1>Ubicación</h1>
+	</div>
+  
+  
+  <p>Palacio de Eventos de Maracaibo</p>
+  
+  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3921.6684320725444!2d-71.65509364917236!3d10.60507561545567!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0000000000000000%3A0xee6e0b6b3edc5c66!2sHotel+Crowne+Plaza+Maruma!5e0!3m2!1ses!2sve!4v1434322764852" frameborder="0" onload="this.width=screen.width;this.height=screen.height;" style="border:0"></iframe>
+  
+  
+  
+  </div><!-- /content -->
+  
+  <div data-role="panel" id="left-panel" data-theme="b">
+    <p>
+      <a href="#page" data-role="button" class="ui-btn-icon-left" data-icon="home">Inicio</a>
+      <a href="#quienessomos" data-role="button" class="ui-btn-icon-left" data-icon="info">¿Quiénes Somos?</a>
+      <a href="#cursos" data-role="button" class="ui-btn-icon-left" data-icon="grid">Cursos</a>
+      <a href="#instructores" data-role="button" class="ui-btn-icon-left" data-icon="check">Instructores</a>
+      <a href="#eventos" data-role="button" class="ui-btn-icon-left" data-icon="plus">Eventos</a>
+      <a href="#ubicacion" data-role="button" class="ui-btn-icon-left" data-icon="arrow-d">Ubicación</a>
+    </p>
+    
+  </div><!-- /panel -->
+  
+  <div data-role="panel" id="right-panel" data-display="push" data-position="right" data-theme="c">
+    <p>Right push panel.</p>
+    <a href="#" data-rel="close" data-role="button" data-mini="true" data-inline="true" data-icon="delete" data-iconpos="right">Close</a>
+  </div><!-- /panel -->
+  
+  
+ <div data-role="footer" data-theme="b">
+		<h4>Ritmo y Esencia. Derechos Reservados 2015.</h4>
+	</div>
+    
+  </div> 
+
+
+
+
 
 </body>
 </html>
