@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<widget xmlns = "http://www.w3.org/ns/widgets"
+    xmlns:gap = "http://phonegap.com/ns/1.0"
+    id        = "com.ritmoyesencia.app"
+    version   = "0.2">
+
+<icon src="images/iconos/36.png"/>
+<icon src="images/iconos/36.png" gap:platform="android" gap:density="ldpi" />
+<icon src="images/iconos/48.png" gap:platform="android" gap:density="mdpi" />
+<icon src="images/iconos/72.png" gap:platform="android" gap:density="hdpi" />
+<icon src="images/iconos/96.png" gap:platform="android" gap:density="xhdpi" />
+
+<gap:splash src="images/splash/ldpi.jpg" gap:platform="android" gap:density="ldpi" />
+<gap:splash src="images/splash/mdpi.jpg" gap:platform="android" gap:density="mdpi" />
+<gap:splash src="images/splash/hdpi.jpg" gap:platform="android" gap:density="hdpi" />
+<gap:splash src="images/splash/xhdpi.jpg" gap:platform="android" gap:density="xhdpi" />
+
+<name>Ritmo y Esencia</name>
+
+<description>
+Ritmo y Esencia. Academia de Baile.
+</description>
+
+<author href="http://fb.com/andresblanco3l" email="gz3ln3n3@gmail.com">
+Andrés Blanco
+</author>
+
+</widget>
