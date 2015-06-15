@@ -105,29 +105,99 @@
 	</div>
 </div>
 
-<div data-role="page" id="page3">
-	<div data-role="header">
-		<h1>Página tres</h1>
-	</div>
-	<div data-role="content">	
-		Contenido		
-	</div>
-	<div data-role="footer">
-		<h4>Pie de página</h4>
-	</div>
-</div>
 
-<div data-role="page" id="page4">
-	<div data-role="header">
-		<h1>Página cuatro</h1>
+
+
+
+
+
+
+
+<div data-role="page" id="instructores" data-theme="c" data-url="instructores">
+  <div data-role="header" data-theme="b">
+	<h1><img class="imgr" src="images/logo.png"/></h1>
+	<a href="#left-panel" data-theme="a" data-icon="grid" data-iconpos="notext" data-shadow="false" data-iconshadow="false">Open left panel</a>
+	<a href="#right-panel" data-theme="a" data-icon="arrow-l" data-iconpos="notext" data-shadow="false" data-iconshadow="false" class="ui-icon-nodisc">Open right panel</a>
+  </div><!-- /header -->
+  
+  <div data-role="header">
+		<h1>Instructores</h1>
 	</div>
-	<div data-role="content">	
-		Contenido		
+  
+  <div data-role="content">
+  
+
+  <div data-role="collapsible-set" data-theme="e">
+  
+
+	<div data-role="collapsible" data-collapsed="false">
+	<h3>Juan José Carreño</h3>
+    <h4>Director</h4>
+   
+    <img src="images/instructores/jjc.jpg" class="imgr">
+    
+	<p class="justify">
+    Con más de seis años de experiencia como bailarín, coreógrafo y formador de jóvenes en Salsa Casino, Chachachá Cubano, Son Cubano, Danza Afrocubana y Ritmos Urbanos. Organizador del Congreso de Salsa CONGAS. Formado por los mejores instructores de Venezuela y el Mundo en materia de Salsa Cubana. Asistente al evento “Baila en Cuba 2011” realizado en la Habana, donde vio clases con instructores especializados en todo lo referente a la Cultura Dancística Cubana, avalados por la Escuela Nacional de Artes de Cuba (ENA) y el Instituto Superior de Artes de Cuba (ISA). Precursor del estilo TIMBA CUBANA en Venezuela.
+    </p>
 	</div>
-	<div data-role="footer">
-		<h4>Pie de página</h4>
+    
+    
+	
+	<div data-role="collapsible">
+	<h3>Jean Carlos Mushart</h3>
+    <h4>Sub-Director</h4>
+    
+    <img src="images/instructores/jcm.jpg" class="imgr">
+    
+	<p class="justify">
+    en Salsa Casino. Organizador del Congreso de Salsa CONGAS. Formado por los mejores instructores de Venezuela y el Mundo en materia de Salsa Cubana. Especializado en la Instrucción para jóvenes nuevos talentos, puesto que logra explotar de forma eficaz las cualidades de los bailadores, ganando fácilmente confianza para enfrentarse a los retos de bailar sobre un escenario.
+    </p>
 	</div>
+    
+    
+    <div data-role="collapsible">
+	<h3>Carlos Pérez</h3>
+    <h4>Cordinador General</h4>
+    
+    <img src="images/instructores/cp.jpg" class="imgr">
+    
+	<p class="justify">
+    Con más de siete años de experiencia en el mundo de la Salsa Casino, actualmente se desempeña como instructor, coreógrafo y bailarín profesional de Salsa en Línea, Salsa Show o Cabaret, Chachachá de Salón y Bachata. Productor y Organizador del Congreso de Salsa CONGAS. Formado a través de talleres por Compañías de Baile como Imagen Latina, Social Style, Fusión Salsera; e instruido de igual forma con talleres dictados por Kelvin Hernández y Licelott Maldonado, Yoaldry Espinoza y Carlos Suárez, Jayson Molina, Carine y Rafael, Anita y Adrian, Tropical Gem, entre otros. Precursor en el Zulia de la formación de profesionales integrales de forma teórico-práctica en materia de Salsa en Línea.
+    </p>
+	</div>
+	
 </div>
+  
+  
+  
+  </div><!-- /content -->
+  
+  <div data-role="panel" id="left-panel" data-theme="b">
+    <p>
+      <a href="#page" data-role="button" class="ui-btn-icon-left" data-icon="home">Inicio</a>
+      <a href="#quienessomos" data-role="button" class="ui-btn-icon-left" data-icon="info">¿Quiénes Somos?</a>
+      <a href="#cursos" data-role="button" class="ui-btn-icon-left" data-icon="grid">Cursos</a>
+      <a href="#instructores" data-role="button" class="ui-btn-icon-left" data-icon="check">Instructores</a>
+      <a href="#eventos" data-role="button" class="ui-btn-icon-left" data-icon="plus">Eventos</a>
+      <a href="#ubicacion" data-role="button" class="ui-btn-icon-left" data-icon="arrow-d">Ubicación</a>
+    </p>
+    
+  </div><!-- /panel -->
+  
+  <div data-role="panel" id="right-panel" data-display="push" data-position="right" data-theme="c">
+    <p>Right push panel.</p>
+    <a href="#" data-rel="close" data-role="button" data-mini="true" data-inline="true" data-icon="delete" data-iconpos="right">Close</a>
+  </div><!-- /panel -->
+  
+  
+ <div data-role="footer" data-theme="b">
+		<h4>Ritmo y Esencia. Derechos Reservados 2015.</h4>
+	</div>
+    
+  </div> 
+
+
+
 
 
 
@@ -142,16 +212,22 @@
     
   </div><!-- /header -->
   
-  <div data-role="content">
-  
-  <div data-role="header">
+   <div data-role="header">
 		<h1>Ubicación</h1>
 	</div>
   
+  <div data-role="content">
   
-  <p>Palacio de Eventos de Maracaibo</p>
   
-  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3921.6684320725444!2d-71.65509364917236!3d10.60507561545567!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0000000000000000%3A0xee6e0b6b3edc5c66!2sHotel+Crowne+Plaza+Maruma!5e0!3m2!1ses!2sve!4v1434322764852" frameborder="0" onload="this.width=screen.width;this.height=screen.height;" style="border:0"></iframe>
+  
+  <p><h3>Palacio de Eventos de Maracaibo</h3></p>
+  
+  <p><a href="https://www.google.co.ve/maps/@10.6051622,-71.6536857,17z?hl=es"><img src="images/palaciodeeventos.jpg" class="imgr" alt=""></a></p><br>
+  
+  <p><h3>Circulo militar de Maracaibo</h3></p>
+  
+  
+ <p><a href="https://www.google.co.ve/maps/@10.682826,-71.6202247,17z?hl=es"><img src="images/circulomilitar.jpg" class="imgr" alt=""></a></p>
   
   
   
