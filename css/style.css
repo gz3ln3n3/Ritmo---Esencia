@@ -6,6 +6,12 @@
 	height:auto;
 	display: block;
 	}
+video {
+	max-width:100%;
+	min-width: 100%;
+	height:auto;
+	display: block;
+	}
 .justify{
 text-align : justify;
 }
@@ -32,7 +38,7 @@ text-align : justify;
 		/* Content styling. */
 		dl { font-family: "Times New Roman", Times, serif; padding: 1em; }
 		dt { font-size: 2em; font-weight: bold; }
-		dt span { font-size: .5em; color: #777; margin-left: .5em; }
+		dt span { font-size: .5em; color: #777; margin-left: 6em%; }
 		dd { font-size: 1.25em;	margin: 1em 0 0; padding-bottom: 1em; border-bottom: 1px solid #eee; }
 		.back-btn { float: right; margin: 0 2em 1em 0; }
 
