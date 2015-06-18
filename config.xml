@@ -25,4 +25,8 @@ Ritmo y Esencia. Academia de Baile.
 Andrés Blanco
 </author>
 
+<!--Plugin de notificaciones --> 
+<gap:plugin name="com.phonegap.plugins.pushplugin"/> 
+<access origin="*" />
+
 </widget>
