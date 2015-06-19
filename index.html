@@ -9,69 +9,23 @@
 <script src="jquery-mobile/jquery.mobile-1.3.0.min.js" type="text/javascript"></script>
 <script src="js/swipe.js" type="text/javascript"></script>
 <script type="text/javascript">
+	//Modulo Externo Noticias <Div id="notirye"></div>
+	/*$(document).ready(function() {
+		$("#notirye").load('http://ritmoyesencia.vzpla.net/notirye.html');
+	});*/
 	$(document).ready(function() {
-		$("#notirye").load('/notirye.html');
+		$("#notirye").load('http://ritmoyesencia.vzpla.net/notirye.html');
 	});
+
+	//Modulo Externo Cursos <Div id="cursosrye"></div>
+	$(document).ready(function() {
+		$("#cursosrye").load('http://ritmoyesencia.vzpla.net/cursosrye.html');
+	});
+	
+	
 </script>
 </head> 
 <body>
-
-
-
-<!--
-/////////////////////////////////////////////////
-
-NOTIFICACION PUSH
-
-/////////////////////////////////////////////////
--->
-
-
-<div class="app"> 
-            <h1>PhoneGap</h1> 
-            <form id="formulario" name="formulario" method="post" action="http://ritmoyesencia.site40.net/registro.php"> 
-                <p><input type="text" id="name" name="name" placeholder="Nombre" required></p> 
-                <p><input type="text" id="email" name="email" placeholder="Correo" required></p> 
-                <p><input type="text" name="regId" id="regId" readonly="readonly" placeholder="regId"></p> 
-                <button type="button" onclick="registrar();">Registar</button> 
-            </form>   
-
-            <div id="deviceready" class="blink"> 
-                <p class="event listening">Connecting to Device</p> 
-                <p class="event received">Device is Ready</p> 
-            </div>   
-        </div>  
-        <script type="text/javascript" src="js/PushNotification.js"></script> 
-        <script type="text/javascript" src="js/index.js"></script> 
-        <script type="text/javascript"> 
-        //El registro al servicio de google lo hacemos automáticamente 
-        app.initialize(); 
-        function registrar(){ 
-            var nombre = document.getElementById('name').value; 
-            var email = document.getElementById('email').value; 
-            var regId = document.getElementById('regId').value; 
-            if (regId != "") { 
-                if (nombre != "" && email != "") { 
-                    //Enviamos los datos al servidor php 
-                    document.formulario.submit(); 
-                } 
-                else{alert('Ingrese un nombre y un correo para el registro en la base de datos.')} 
-            } 
-            else 
-                {alert('Esperando el regId del registro en GCM!');} 
-        } 
-        </script>
-        
-<!--
-/////////////////////////////////////////////////
-
-NOTIFICACION PUSH
-
-/////////////////////////////////////////////////
--->
-
-
-
 
 
 
@@ -88,8 +42,15 @@ NOTIFICACION PUSH
   <div data-role="content" class="out">
   
   	<div id="notirye">
-    <h3 data-theme="b">Necesitas estar conectado a internet para ver las noticias.
-    </h3></div>
+
+	<p>
+      <br>
+        <p><img src="images/loader.gif" style=" width:40%; height:auto; margin: 0 auto; padding: 0 auto; display: block;">
+        </p>
+      <br>
+    </p>
+   
+    </div>
   
   </div>
     
@@ -171,12 +132,6 @@ NOTIFICACION PUSH
 		<h4>Pie de página</h4>
 	</div>
 </div>
-
-
-
-
-
-
 
 
 
@@ -262,12 +217,6 @@ NOTIFICACION PUSH
 	</div>
     
   </div> 
-
-
-
-
-
-
 
 
 
@@ -357,6 +306,64 @@ NOTIFICACION PUSH
   </div> 
 
 
+<div data-role="page" id="cursos">
+  <div data-role="header" data-theme="b">
+	<h1><img class="imgr" src="images/logo.png"/></h1>
+	<a href="#left-panel" data-theme="a" data-icon="grid" data-iconpos="notext" data-shadow="false" data-iconshadow="false">Open left panel</a>
+	<a href="#right-panel" data-theme="a" data-icon="arrow-l" data-iconpos="notext" data-shadow="false" data-iconshadow="false" class="ui-icon-nodisc">Open right panel</a>
+    
+  </div><!-- /header -->
+  
+   <div data-role="header">
+		<h1>Cursos</h1>
+	</div>
+  
+  <div data-role="content">
+  
+  
+  
+  <div id="cursosrye">
+
+	<p>
+      <br>
+        <p><img src="images/loader.gif" style=" width:40%; height:auto; margin: 0 auto; padding: 0 auto; display: block;">
+        </p>
+      <br>
+    </p>
+   
+    </div>
+  
+  
+  
+  </div><!-- /content -->
+  
+  <div data-role="panel" id="left-panel" data-theme="b" data-position-fixed="true">
+    <p>
+      <a href="#page" data-role="button" class="ui-btn-icon-left" data-icon="home">Inicio</a>
+      <a href="#quienessomos" data-role="button" class="ui-btn-icon-left" data-icon="info">¿Quiénes Somos?</a>
+      <a href="#cursos" data-role="button" class="ui-btn-icon-left" data-icon="grid">Cursos</a>
+      <a href="#instructores" data-role="button" class="ui-btn-icon-left" data-icon="check">Instructores</a>
+      <a href="#eventos" data-role="button" class="ui-btn-icon-left" data-icon="plus">Eventos</a>
+      <a href="#ubicacion" data-role="button" class="ui-btn-icon-left" data-icon="arrow-d">Ubicación</a>
+    </p>
+    
+  </div><!-- /panel -->
+  
+  <div data-role="panel" id="right-panel" data-display="push" data-position="right" data-theme="c">
+    <p>Right push panel.</p>
+    <a href="#" data-rel="close" data-role="button" data-mini="true" data-inline="true" data-icon="delete" data-iconpos="right">Close</a>
+  </div><!-- /panel -->
+  
+  
+ <div data-role="footer" data-theme="b">
+		<h4>Ritmo y Esencia. Derechos Reservados 2015.</h4>
+	</div>
+    
+  </div> 
+  
+  
+  
+ 
 
 
 
