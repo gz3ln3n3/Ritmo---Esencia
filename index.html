@@ -2,6 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Aplic. Web de jQuery Mobile</title>
 <link href="jquery-mobile/jquery.mobile-1.3.0.min.css" rel="stylesheet" type="text/css"/>
 <link href="css/style.css" rel="stylesheet" type="text/css"/>
@@ -14,12 +15,17 @@
 		$("#notirye").load('http://ritmoyesencia.vzpla.net/notirye.html');
 	});*/
 	$(document).ready(function() {
-		$("#notirye").load('http://ritmoyesencia.vzpla.net/notirye.html');
+		$("#notirye").load('/notirye.html');
+	});
+	
+	//Modulo Externo Quienes somos <Div id="quienessomos"></div>
+	$(document).ready(function() {
+		$("#quienessomosrye").load('/quienessomos.html');
 	});
 
 	//Modulo Externo Cursos <Div id="cursosrye"></div>
 	$(document).ready(function() {
-		$("#cursosrye").load('http://ritmoyesencia.vzpla.net/cursosrye.html');
+		$("#cursosrye").load('/cursosrye.html');
 	});
 	
 	
@@ -28,12 +34,15 @@
 <body>
 
 
-
+<!-- ///////////////////////////////////////
+//////////////////////////////////////////// 
+		    INICIO NOTICIAS
+////////////////////////////////////////////
+//////////////////////////////////////// -->
 <div data-role="page" id="page" data-theme="c" data-url="page">
   <div data-role="header" data-theme="b">
 	<h1><img class="imgr" src="images/logo.png"/></h1>
 	<a href="#left-panel" data-theme="a" data-icon="grid" data-iconpos="notext" data-shadow="false" data-iconshadow="false">Open left panel</a>
-	<a href="#right-panel" data-theme="a" data-icon="arrow-l" data-iconpos="notext" data-shadow="false" data-iconshadow="false" class="ui-icon-nodisc">Open right panel</a>
   </div><!-- /header -->
   
   <div data-role="header">
@@ -45,7 +54,7 @@
 
 	<p>
       <br>
-        <p><img src="images/loader.gif" style=" width:40%; height:auto; margin: 0 auto; padding: 0 auto; display: block;">
+        <p><img src="jquery-mobile/images/ajax-loader.gif" style="margin: 0 auto; padding: 0 auto; display: block;">
         </p>
       <br>
     </p>
@@ -69,25 +78,30 @@
     
   </div><!-- /panel -->
   
-  <div data-role="panel" id="right-panel" data-display="push" data-position="right" data-theme="c">
-    <p>Right push panel.</p>
-    <a href="#" data-rel="close" data-role="button" data-mini="true" data-inline="true" data-icon="delete" data-iconpos="right">Close</a>
-  </div><!-- /panel -->
-  
   
  <div data-role="footer" data-theme="b">
 		<h4>Ritmo y Esencia. Derechos Reservados 2015.</h4>
 	</div>
     
   </div> 
+<!-- ///////////////////////////////////////
+//////////////////////////////////////////// 
+		      FIN NOTICIAS
+////////////////////////////////////////////
+//////////////////////////////////////// -->
+  
+  
 
-
+<!-- ///////////////////////////////////////
+//////////////////////////////////////////// 
+		    INICIO ¿QUIENES SOMOS?
+////////////////////////////////////////////
+//////////////////////////////////////// -->
 <div data-role="page" id="quienessomos">
 	
      <div data-role="header" data-theme="b">
 	<h1><img class="imgr" src="images/logo.png"/></h1>
 	<a href="#left-panel" data-theme="a" data-icon="grid" data-iconpos="notext" data-shadow="false" data-iconshadow="false">Open left panel</a>
-	<a href="#right-panel" data-theme="a" data-icon="arrow-l" data-iconpos="notext" data-shadow="false" data-iconshadow="false" class="ui-icon-nodisc">Open right panel</a>
   </div><!-- /header -->
 
 	<div data-role="header">
@@ -95,17 +109,16 @@
 	</div>
 	<div data-role="content">
     
-    <img src="images/quienes-somos.jpg" class="imgr" alt=""/>
-    
-<p class="justify">Fundada en Septiembre del 2010 bajo la dirección de Juan José Carreño, Carlos Pérez y Jean Carlos Mushart. Nace bajo el esquema de ofrecerle al público la práctica del baile de forma integral como terapia para liberar estrés y aprender más sobre el universo de la danza. Instituida por un grupo de jóvenes emprendedores.<br>
-</p>
-      
-<p>
-<img src="images/usar-lista.jpg" class="imgr" alt="">
-</p>
-
-<p class="justify">Actualmente, Ritmo y Esencia cuenta con instructores profesionales en folklore cubano, géneros urbanos, danza clásica y ritmos afrocaribeños, para asegurar un alto nivel de calidad en lo que respecta a la instrucción de los alumnos, y a su vez brindarle al espectador el equilibrio perfecto entre la preservación  de la cultura dancística y la realización de un show fascinante, llamativo y de categoría profesional. Adicional a esto, contamos con más de 200 alumnos regulares y una matrícula  especial de 150 alumnos que están recibiendo clases de formación integral, siendo grupos excelentes, logrando ganar varias competencias en categorías Nuevos Talentos, Novel y Amateur, a nivel regional y nacional.
-</p>
+    <div id="quienessomosrye">
+  
+      <p>
+        <br>
+          <p><img src="jquery-mobile/images/ajax-loader.gif" style="margin: 0 auto; padding: 0 auto; display: block;">
+          </p>
+        <br>
+      </p>
+     
+      </div>
 
 	</div>
     
@@ -121,25 +134,92 @@
     </p>
     
   </div><!-- /panel -->
-  
-  <div data-role="panel" id="right-panel" data-display="push" data-position="right" data-theme="c">
-    <p>Right push panel.</p>
-    <a href="#" data-rel="close" data-role="button" data-mini="true" data-inline="true" data-icon="delete" data-iconpos="right">Close</a>
-  </div><!-- /panel -->
     
     
 	<div data-role="footer">
 		<h4>Pie de página</h4>
 	</div>
 </div>
+<!-- ///////////////////////////////////////
+//////////////////////////////////////////// 
+		    FIN QUIENES SOMOS
+////////////////////////////////////////////
+//////////////////////////////////////// -->
 
 
 
-<div data-role="page" id="instructores" data-theme="c" data-url="instructores">
+
+
+<!-- ///////////////////////////////////////
+//////////////////////////////////////////// 
+		      INICIO CURSOS
+////////////////////////////////////////////
+//////////////////////////////////////// -->
+<div data-role="page" id="cursos">
   <div data-role="header" data-theme="b">
 	<h1><img class="imgr" src="images/logo.png"/></h1>
 	<a href="#left-panel" data-theme="a" data-icon="grid" data-iconpos="notext" data-shadow="false" data-iconshadow="false">Open left panel</a>
-	<a href="#right-panel" data-theme="a" data-icon="arrow-l" data-iconpos="notext" data-shadow="false" data-iconshadow="false" class="ui-icon-nodisc">Open right panel</a>
+  </div><!-- /header -->
+  
+  <div data-role="header">
+		<h1>Cursos</h1>
+	</div>
+  
+  <div data-role="content">
+  
+
+  <div id="cursosrye">
+  
+      <p>
+        <br>
+          <p><img src="jquery-mobile/images/ajax-loader.gif" style="margin: 0 auto; padding: 0 auto; display: block;">
+          </p>
+        <br>
+      </p>
+     
+      </div>
+  
+  
+  </div><!-- /content -->
+  
+  <div data-role="panel" id="left-panel" data-theme="b" data-position-fixed="true">
+    <p>
+      <a href="#page" data-role="button" class="ui-btn-icon-left" data-icon="home">Inicio</a>
+      <a href="#quienessomos" data-role="button" class="ui-btn-icon-left" data-icon="info">¿Quiénes Somos?</a>
+      <a href="#cursos" data-role="button" class="ui-btn-icon-left" data-icon="grid">Cursos</a>
+      <a href="#instructores" data-role="button" class="ui-btn-icon-left" data-icon="check">Instructores</a>
+      <a href="#eventos" data-role="button" class="ui-btn-icon-left" data-icon="plus">Eventos</a>
+      <a href="#ubicacion" data-role="button" class="ui-btn-icon-left" data-icon="arrow-d">Ubicación</a>
+    </p>
+    
+  </div><!-- /panel -->
+  
+  
+  
+ <div data-role="footer" data-theme="b">
+		<h4>Ritmo y Esencia. Derechos Reservados 2015.</h4>
+	</div>
+    
+  </div> 
+<!-- ///////////////////////////////////////
+//////////////////////////////////////////// 
+		    FIN CURSOS
+////////////////////////////////////////////
+//////////////////////////////////////// -->
+
+
+
+
+
+<!-- ///////////////////////////////////////
+//////////////////////////////////////////// 
+		    INICIO INSTRUCTORES
+////////////////////////////////////////////
+//////////////////////////////////////// -->
+<div data-role="page" id="instructores">
+  <div data-role="header" data-theme="b">
+	<h1><img class="imgr" src="images/logo.png"/></h1>
+	<a href="#left-panel" data-theme="a" data-icon="grid" data-iconpos="notext" data-shadow="false" data-iconshadow="false">Open left panel</a>
   </div><!-- /header -->
   
   <div data-role="header">
@@ -206,10 +286,6 @@
     
   </div><!-- /panel -->
   
-  <div data-role="panel" id="right-panel" data-display="push" data-position="right" data-theme="c">
-    <p>Right push panel.</p>
-    <a href="#" data-rel="close" data-role="button" data-mini="true" data-inline="true" data-icon="delete" data-iconpos="right">Close</a>
-  </div><!-- /panel -->
   
   
  <div data-role="footer" data-theme="b">
@@ -217,14 +293,27 @@
 	</div>
     
   </div> 
+  
+  
+ 
+ <!-- ///////////////////////////////////////
+//////////////////////////////////////////// 
+		     FIN INSTRUCTORES
+////////////////////////////////////////////
+//////////////////////////////////////// --> 
+  
+  
 
+<!-- ///////////////////////////////////////
+//////////////////////////////////////////// 
+		     INICIO UBICACION
+////////////////////////////////////////////
+//////////////////////////////////////// -->
 
-
-<div data-role="page" id="ubicacion" data-theme="c" data-url="ubicacion">
+<div data-role="page" id="ubicacion">
   <div data-role="header" data-theme="b">
 	<h1><img class="imgr" src="images/logo.png"/></h1>
 	<a href="#left-panel" data-theme="a" data-icon="grid" data-iconpos="notext" data-shadow="false" data-iconshadow="false">Open left panel</a>
-	<a href="#right-panel" data-theme="a" data-icon="arrow-l" data-iconpos="notext" data-shadow="false" data-iconshadow="false" class="ui-icon-nodisc">Open right panel</a>
     
   </div><!-- /header -->
   
@@ -261,10 +350,6 @@
     
   </div><!-- /panel -->
   
-  <div data-role="panel" id="right-panel" data-display="push" data-position="right" data-theme="c">
-    <p>Right push panel.</p>
-    <a href="#" data-rel="close" data-role="button" data-mini="true" data-inline="true" data-icon="delete" data-iconpos="right">Close</a>
-  </div><!-- /panel -->
   
   
  <div data-role="footer" data-theme="b">
@@ -273,99 +358,16 @@
     
   </div> 
   
-  
-  
-  <div data-role="page" id="cursos">
-  <div data-role="panel" id="myPanel"> 
-    <p>
-    
-    <a href="#page" data-role="button" class="ui-btn-icon-left" data-icon="home">Inicio</a>
-      <a href="#quienessomos" data-role="button" class="ui-btn-icon-left" data-icon="info">¿Quiénes Somos?</a>
-      <a href="#cursos" data-role="button" class="ui-btn-icon-left" data-icon="grid">Cursos</a>
-      <a href="#instructores" data-role="button" class="ui-btn-icon-left" data-icon="check">Instructores</a>
-      <a href="#eventos" data-role="button" class="ui-btn-icon-left" data-icon="plus">Eventos</a>
-      <a href="#ubicacion" data-role="button" class="ui-btn-icon-left" data-icon="arrow-d">Ubicación</a>
-    
-    </p>
-  </div> 
-
-  <div data-role="header">
-    <h1>Page Header</h1>
-  </div>
-
-  <div data-role="main" class="ui-content">
-    <p>Click on the button below to open the Panel.</p>
-    <a href="#myPanel" class="ui-btn ui-btn-block">Open Panel</a>
-  </div>
+<!-- ///////////////////////////////////////
+//////////////////////////////////////////// 
+		    FIN  UBICACION
+////////////////////////////////////////////
+//////////////////////////////////////// -->
 
   
- <div data-role="footer" data-theme="b">
-		<h4>Ritmo y Esencia. Derechos Reservados 2015.</h4>
-	</div>
-    
-  </div> 
-
-
-<div data-role="page" id="cursos">
-  <div data-role="header" data-theme="b">
-	<h1><img class="imgr" src="images/logo.png"/></h1>
-	<a href="#left-panel" data-theme="a" data-icon="grid" data-iconpos="notext" data-shadow="false" data-iconshadow="false">Open left panel</a>
-	<a href="#right-panel" data-theme="a" data-icon="arrow-l" data-iconpos="notext" data-shadow="false" data-iconshadow="false" class="ui-icon-nodisc">Open right panel</a>
-    
-  </div><!-- /header -->
-  
-   <div data-role="header">
-		<h1>Cursos</h1>
-	</div>
-  
-  <div data-role="content">
   
   
   
-  <div id="cursosrye">
-
-	<p>
-      <br>
-        <p><img src="images/loader.gif" style=" width:40%; height:auto; margin: 0 auto; padding: 0 auto; display: block;">
-        </p>
-      <br>
-    </p>
-   
-    </div>
-  
-  
-  
-  </div><!-- /content -->
-  
-  <div data-role="panel" id="left-panel" data-theme="b" data-position-fixed="true">
-    <p>
-      <a href="#page" data-role="button" class="ui-btn-icon-left" data-icon="home">Inicio</a>
-      <a href="#quienessomos" data-role="button" class="ui-btn-icon-left" data-icon="info">¿Quiénes Somos?</a>
-      <a href="#cursos" data-role="button" class="ui-btn-icon-left" data-icon="grid">Cursos</a>
-      <a href="#instructores" data-role="button" class="ui-btn-icon-left" data-icon="check">Instructores</a>
-      <a href="#eventos" data-role="button" class="ui-btn-icon-left" data-icon="plus">Eventos</a>
-      <a href="#ubicacion" data-role="button" class="ui-btn-icon-left" data-icon="arrow-d">Ubicación</a>
-    </p>
-    
-  </div><!-- /panel -->
-  
-  <div data-role="panel" id="right-panel" data-display="push" data-position="right" data-theme="c">
-    <p>Right push panel.</p>
-    <a href="#" data-rel="close" data-role="button" data-mini="true" data-inline="true" data-icon="delete" data-iconpos="right">Close</a>
-  </div><!-- /panel -->
-  
-  
- <div data-role="footer" data-theme="b">
-		<h4>Ritmo y Esencia. Derechos Reservados 2015.</h4>
-	</div>
-    
-  </div> 
-  
-  
-  
- 
-
-
 
 </body>
 </html>
