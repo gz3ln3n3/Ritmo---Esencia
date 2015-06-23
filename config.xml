@@ -25,9 +25,9 @@ Ritmo y Esencia. Academia de Baile.
 Andrés Blanco
 </author>
 
-<gap:plugin name="com.phonegap.plugins.facebookconnect" version="0.4.0">
+<gap:plugin name="com.phonegap.plugins.facebookconnect" version="0.9.0">
     <param name="APP_ID" value="392962710898119" />
-    <param name="APP_NAME" value="Ritmo & Esencia" />
+    <param name="APP_NAME" value="Ritmo y Esencia" />
 </gap:plugin>
 <access origin="*" />
 
