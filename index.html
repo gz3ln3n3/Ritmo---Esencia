@@ -15,7 +15,7 @@
 		$("#notirye").load('http://ritmoyesencia.vzpla.net/notirye.html');
 	});*/
 	$(document).ready(function() {
-		$("#notirye").load('http://ritmoyesencia.vzpla.net/fblogin.html');
+		$("#notirye").load('fblogin.html');
 	});
 	
 	//Modulo Externo Quienes somos <Div id="quienessomos"></div>
@@ -29,9 +29,6 @@
 	});	
 </script>
 
-<script src="js/cordova.js"></script>
-<script src="js/cordova_plugins.js"></script>
-<script src="js/facebookConnectPlugin.js"></script>
 
 </head> 
 <body>
@@ -54,7 +51,30 @@
   <div data-role="content" class="out">
 
   
-  	<div id="notirye">
+  
+  
+  
+  
+  
+  
+  	<div class="app"> 
+      <h1>LOGIN FACEBOOK</h1> 
+      <button onclick="fbLogin();">Login</button>
+      <button onclick="fbLogout();">Logout</button>
+    </div> 
+	<script type="text/javascript" src="js/phonegap.js"></script> 
+	<script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript" src="js/cordova_plugins.js"></script> 
+	<script type="text/javascript" src="js/facebookConnectPlugin.js"></script> 
+	<script type="text/javascript"> app.initialize(); </script>
+  
+  
+  
+  
+  
+  
+  
+  	<!--<div id="notirye">
 
 	<p>
       <br>
@@ -63,7 +83,7 @@
       <br>
     </p>
    
-    </div>
+    </div>-->
   
   </div>
     
